@@ -8,7 +8,7 @@
  */
 package org.w3c.css.flute.parser;
 
-import org.w3c.css.flute.util.BooleanUtil;
+import org.helyx.basics4me.lang.BooleanUtil;
 import org.w3c.css.sac.Locator;
 
 /**

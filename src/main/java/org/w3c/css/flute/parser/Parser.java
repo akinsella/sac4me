@@ -8,6 +8,7 @@ import java.io.Reader;
 import java.net.URL;
 import java.util.Locale;
 
+import org.helyx.basics4me.io.BufferedInputStream;
 import org.w3c.css.flute.parser.selectors.ConditionFactoryImpl;
 import org.w3c.css.flute.parser.selectors.SelectorFactoryImpl;
 import org.w3c.css.flute.util.Encoding;
