@@ -28,8 +28,8 @@ public class CssTest extends TestCase {
 	public void testCssParser() throws IOException, NullPointerException,
 			ClassCastException, ClassNotFoundException, IllegalAccessException,
 			InstantiationException {
-		Class _class = Parser.class;
-		String classpath = "/org/w3c/flute/spip_style.css";
+		Class _class = org.w3c.css.flute.parser.Parser.class;
+		String classpath = "/org/w3c/css/flute/test/style.css";
 		InputSource source = new InputSource();
 		InputStream stream = getClass().getResourceAsStream(classpath);
 		try {
