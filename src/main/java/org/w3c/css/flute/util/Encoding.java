@@ -9,8 +9,7 @@
 package org.w3c.css.flute.util;
 
 import java.io.InputStream;
-import java.net.URL;
-import java.util.Properties;
+import org.helyx.basics4me.util.Properties;
 
 /**
  * @version $Revision: 1.1 $

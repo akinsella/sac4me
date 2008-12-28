@@ -5,10 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.net.URL;
-import java.util.Locale;
 
 import org.helyx.basics4me.io.BufferedInputStream;
+import org.helyx.basics4me.lang.UrlUtil;
 import org.w3c.css.flute.parser.selectors.ConditionFactoryImpl;
 import org.w3c.css.flute.parser.selectors.SelectorFactoryImpl;
 import org.w3c.css.flute.util.Encoding;
@@ -57,13 +56,13 @@ public class Parser implements org.w3c.css.sac.Parser, ParserConstants {
         this((CharStream) null);
     }
 
-    /**
-     * @@TODO
-     * @exception CSSException Not yet implemented
-     */
-    public void setLocale(Locale locale) throws CSSException {
-        throw new CSSException(CSSException.SAC_NOT_SUPPORTED_ERR);
-    }
+//    /**
+//     * @@TODO
+//     * @exception CSSException Not yet implemented
+//     */
+//    public void setLocale(Locale locale) throws CSSException {
+//        throw new CSSException(CSSException.SAC_NOT_SUPPORTED_ERR);
+//    }
 
     /**
      * Set the document handler for this parser
@@ -92,7 +91,7 @@ public class Parser implements org.w3c.css.sac.Parser, ParserConstants {
      *
      * @param source the source of the style sheet.
      * @exception IOException the source can't be parsed.
-     * @exception CSSException the source is not CSS valid.
+     * @exception CSSException the source is not CSS valid. 
      */
     public void parseStyleSheet(InputSource source)
             throws CSSException, IOException {
@@ -270,7 +269,7 @@ public class Parser implements org.w3c.css.sac.Parser, ParserConstants {
         } else if (source.getByteStream() == null) {
             // @@CONTINUE ME. see also getReader() with systemId
             try {
-                source.setByteStream(new URL(source.getURI()).openStream());
+                source.setByteStream(UrlUtil.openStream(source.getURI()));
             } catch (Exception e) {
             	throw new CSSException("invalid url ?");
 //                try {

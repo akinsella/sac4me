@@ -12,7 +12,6 @@
 package org.w3c.css.sac;
 
 import java.io.IOException;
-import java.util.Locale;
 
 /**
  * Basic interface for CSS (Simple API for CSS) parsers.
@@ -36,24 +35,24 @@ import java.util.Locale;
  * @see InputSource
  */
 public interface Parser {
-    
-    /**
-     * Allow an application to request a locale for errors and warnings.
-     *
-     * <p>CSS parsers are not required to provide localisation for errors
-     * and warnings; if they cannot support the requested locale,
-     * however, they must throw a CSS exception.  Applications may
-     * not request a locale change in the middle of a parse.</p>
-     *
-     * @param locale A Java Locale object.
-     * @exception CSSException Throws an exception
-     *            (using the previous or default locale) if the 
-     *            requested locale is not supported.
-     * @see CSSException
-     * @see CSSParseException
-     */
-    public void setLocale(Locale locale) throws CSSException;
-    
+//    
+//    /**
+//     * Allow an application to request a locale for errors and warnings.
+//     *
+//     * <p>CSS parsers are not required to provide localisation for errors
+//     * and warnings; if they cannot support the requested locale,
+//     * however, they must throw a CSS exception.  Applications may
+//     * not request a locale change in the middle of a parse.</p>
+//     *
+//     * @param locale A Java Locale object.
+//     * @exception CSSException Throws an exception
+//     *            (using the previous or default locale) if the 
+//     *            requested locale is not supported.
+//     * @see CSSException
+//     * @see CSSParseException
+//     */
+//    public void setLocale(Locale locale) throws CSSException;
+//    
     /**
      * Allow an application to register a document event handler.
      *
