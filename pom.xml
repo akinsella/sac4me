@@ -34,16 +34,16 @@
 	<inceptionYear>2008</inceptionYear>
 
 	<scm>
-		<connection>scm:svn:https://r13491.ovh.net/svn/Sac4ME/trunk</connection>
-		<developerConnection>scm:svn:https://r13491.ovh.net/svn/Sac4ME/trunk</developerConnection>
+		<connection>scm:svn:https://helyx.devguard.com/svn/sac4me/trunk</connection>
+		<developerConnection>scm:svn:https://helyx.devguard.com/svn/sac4me/trunk</developerConnection>
 		<tag>HEAD</tag>
-		<url>http://r13491.ovh.net/websvn/helyx.org/listing.php?repname=Sac4ME&amp;path=%2Ftrunk%2F#_trunk_</url>
+		<url>https://helyx.devguard.com/wsvn/listing.php?repname=sac4me&amp;path=%2Ftrunk%2F#_trunk_</url>
 	</scm>
 
 	<distributionManagement>
 		<repository>
-			<id>Sac4ME</id>
-			<url>file:///var/maven/repository-install</url>
+			<id>Helyx.org FTP Repository</id>
+			<url>ftp://ftp.helyx.org/www/maven/repository/install</url>
 		</repository>
 	</distributionManagement>
 
@@ -70,8 +70,8 @@
 
 	<repositories>
 		<repository>
-			<id>helyx.org</id>
-			<url>http://r13491.ovh.net/archiva/repository/internal/</url>
+			<id>Helyx.org Install</id>
+			<url>http://maven.helyx.org/repository/install</url>
 		</repository>
 	</repositories>
 
@@ -200,7 +200,7 @@
 						</dependencies>
 					-->
 				</plugin>
-
+<!-- 
 	            <plugin>
 	                <groupId>net.sf.jour</groupId>
 	                <artifactId>jour-maven-plugin</artifactId>
@@ -226,7 +226,8 @@
 	                    </dependency>
 	                </dependencies>
 	            </plugin>
-	            
+ -->
+ 	            
 	        </plugins>
 
 		</pluginManagement>
