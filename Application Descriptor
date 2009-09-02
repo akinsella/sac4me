@@ -1,0 +1,8 @@
+MIDlet-Version: 1.0.0
+MIDlet-Info-URL: http://sac4me.helyx.org
+MIDlet-Vendor: Helyx.org
+MIDlet-Jar-URL: Sac4me.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Description: Sac4ME
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Name: Sac4ME
